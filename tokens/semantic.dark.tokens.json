@@ -1,0 +1,358 @@
+{
+  "horizon-semantic-color-bg-base": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-1000}"
+  },
+  "horizon-semantic-color-bg-inverse": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-50}"
+  },
+  "horizon-semantic-color-bg-surfaceprimary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-900}"
+  },
+  "horizon-semantic-color-bg-surfacesecondary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-800}"
+  },
+  "horizon-semantic-color-bg-overlay": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-400a}"
+  },
+  "horizon-semantic-color-bg-disabled": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-800}"
+  },
+  "horizon-semantic-color-bg-primary-neutral-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-0}"
+  },
+  "horizon-semantic-color-bg-primary-neutral-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-50}"
+  },
+  "horizon-semantic-color-bg-primary-neutral-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-100}"
+  },
+  "horizon-semantic-color-bg-primary-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-900}"
+  },
+  "horizon-semantic-color-bg-primary-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-400}"
+  },
+  "horizon-semantic-color-bg-primary-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-700}"
+  },
+  "horizon-semantic-color-bg-primary-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-500}"
+  },
+  "horizon-semantic-color-bg-positive-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-900}"
+  },
+  "horizon-semantic-color-bg-positive-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-500}"
+  },
+  "horizon-semantic-color-bg-positive-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-700}"
+  },
+  "horizon-semantic-color-bg-positive-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-600}"
+  },
+  "horizon-semantic-color-bg-warning-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-900}"
+  },
+  "horizon-semantic-color-bg-warning-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-500}"
+  },
+  "horizon-semantic-color-bg-warning-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-700}"
+  },
+  "horizon-semantic-color-bg-warning-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-600}"
+  },
+  "horizon-semantic-color-bg-negative-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-900}"
+  },
+  "horizon-semantic-color-bg-negative-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-500}"
+  },
+  "horizon-semantic-color-bg-negative-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-700}"
+  },
+  "horizon-semantic-color-bg-negative-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-600}"
+  },
+  "horizon-semantic-color-bg-info-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-900}"
+  },
+  "horizon-semantic-color-bg-info-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-500}"
+  },
+  "horizon-semantic-color-bg-info-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-700}"
+  },
+  "horizon-semantic-color-bg-info-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-600}"
+  },
+  "horizon-semantic-color-bg-update-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-violet-900}"
+  },
+  "horizon-semantic-color-bg-update-idle": {
+    "$type": "color",
+    "$value": "{horizon-core-color-violet-500}"
+  },
+  "horizon-semantic-color-bg-update-hovered": {
+    "$type": "color",
+    "$value": "{horizon-core-color-violet-700}"
+  },
+  "horizon-semantic-color-bg-accent-blue": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-900}"
+  },
+  "horizon-semantic-color-bg-update-focused": {
+    "$type": "color",
+    "$value": "{horizon-core-color-violet-600}"
+  },
+  "horizon-semantic-color-bg-accent-navy": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-900}"
+  },
+  "horizon-semantic-color-bg-accent-lightblue": {
+    "$type": "color",
+    "$value": "{horizon-core-color-lightblue-900}"
+  },
+  "horizon-semantic-color-bg-accent-cyan": {
+    "$type": "color",
+    "$value": "{horizon-core-color-cyan-900}"
+  },
+  "horizon-semantic-color-bg-accent-teal": {
+    "$type": "color",
+    "$value": "{horizon-core-color-teal-900}"
+  },
+  "horizon-semantic-color-bg-accent-violet": {
+    "$type": "color",
+    "$value": "{horizon-core-color-violet-900}"
+  },
+  "horizon-semantic-color-bg-accent-green": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-900}"
+  },
+  "horizon-semantic-color-bg-accent-yellow": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-900}"
+  },
+  "horizon-semantic-color-bg-accent-red": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-900}"
+  },
+  "horizon-semantic-color-text-primary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-0}"
+  },
+  "horizon-semantic-color-text-secondary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-400}"
+  },
+  "horizon-semantic-color-text-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-0}"
+  },
+  "horizon-semantic-color-text-disabled-on-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-600}"
+  },
+  "horizon-semantic-color-text-inverse-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-1000}"
+  },
+  "horizon-semantic-color-text-inverse-secondary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-900}"
+  },
+  "horizon-semantic-color-text-disabled-on-dark": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-800}"
+  },
+  "horizon-semantic-color-text-brand": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-400}"
+  },
+  "horizon-semantic-color-text-positive": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-400}"
+  },
+  "horizon-semantic-color-text-warning": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-600}"
+  },
+  "horizon-semantic-color-text-negative": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-400}"
+  },
+  "horizon-semantic-color-text-info": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-500}"
+  },
+  "horizon-semantic-color-text-update": {
+    "$type": "color",
+    "$value": "{horizon-core-color-teal-500}"
+  },
+  "horizon-semantic-color-icon-primary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-0}"
+  },
+  "horizon-semantic-color-icon-secondary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-400}"
+  },
+  "horizon-semantic-color-icon-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-0}"
+  },
+  "horizon-semantic-color-icon-disabled-on-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-600}"
+  },
+  "horizon-semantic-color-icon-inverse-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-1000}"
+  },
+  "horizon-semantic-color-icon-inverse-secondary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-900}"
+  },
+  "horizon-semantic-color-icon-disabled-on-dark": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-800}"
+  },
+  "horizon-semantic-color-icon-brand": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-500}"
+  },
+  "horizon-semantic-color-icon-positive": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-500}"
+  },
+  "horizon-semantic-color-icon-warning": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-600}"
+  },
+  "horizon-semantic-color-icon-negative": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-600}"
+  },
+  "horizon-semantic-color-icon-info": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-500}"
+  },
+  "horizon-semantic-color-icon-update": {
+    "$type": "color",
+    "$value": "{horizon-core-color-teal-500}"
+  },
+  "horizon-semantic-color-border-primary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-700}"
+  },
+  "horizon-semantic-color-border-brand-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-600}"
+  },
+  "horizon-semantic-color-border-positive-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-600}"
+  },
+  "horizon-semantic-color-border-warning-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-600}"
+  },
+  "horizon-semantic-color-border-warning-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-500}"
+  },
+  "horizon-semantic-color-border-warning-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-yellow-400}"
+  },
+  "horizon-semantic-color-border-negative-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-600}"
+  },
+  "horizon-semantic-color-border-negative-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-500}"
+  },
+  "horizon-semantic-color-border-negative-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-red-400}"
+  },
+  "horizon-semantic-color-border-positive-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-500}"
+  },
+  "horizon-semantic-color-border-positive-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-green-400}"
+  },
+  "horizon-semantic-color-border-brand-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-500}"
+  },
+  "horizon-semantic-color-border-brand-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-blue-400}"
+  },
+  "horizon-semantic-color-border-secondary": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-800}"
+  },
+  "horizon-semantic-color-border-inverse": {
+    "$type": "color",
+    "$value": "{horizon-core-color-neutral-0}"
+  },
+  "horizon-semantic-color-border-info-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-600}"
+  },
+  "horizon-semantic-color-border-info-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-500}"
+  },
+  "horizon-semantic-color-border-info-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-navy-400}"
+  },
+  "horizon-semantic-color-border-update-light": {
+    "$type": "color",
+    "$value": "{horizon-core-color-teal-600}"
+  },
+  "horizon-semantic-color-border-update-default": {
+    "$type": "color",
+    "$value": "{horizon-core-color-teal-500}"
+  },
+  "horizon-semantic-color-border-update-bold": {
+    "$type": "color",
+    "$value": "{horizon-core-color-teal-400}"
+  }
+}

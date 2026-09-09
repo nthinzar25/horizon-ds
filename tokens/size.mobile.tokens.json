@@ -1,0 +1,453 @@
+{
+  "horizon-core-spacing-none": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-3xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 4,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-2xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 8,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-md": {
+    "$type": "dimension",
+    "$value": {
+      "value": 32,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-lg": {
+    "$type": "dimension",
+    "$value": {
+      "value": 40,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 48,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-2xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 56,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-3xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 64,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-4xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 72,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-5xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 80,
+      "unit": "px"
+    }
+  },
+  "horizon-core-size-icon-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    }
+  },
+  "horizon-core-size-icon-md": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    }
+  },
+  "horizon-core-size-icon-lg": {
+    "$type": "dimension",
+    "$value": {
+      "value": 40,
+      "unit": "px"
+    }
+  },
+  "horizon-core-size-icon-xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 48,
+      "unit": "px"
+    }
+  },
+  "horizon-semantic-border-radius-none": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-none}",
+    "$description": "md.sys.shape.corner.none — 0dp. Full-bleed surfaces, edge-to-edge images."
+  },
+  "horizon-semantic-border-radius-xs": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-xs}",
+    "$description": "md.sys.shape.corner.extra-small — 4dp. Menus, snackbars, standard text fields."
+  },
+  "horizon-semantic-border-radius-sm": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-sm}",
+    "$description": "md.sys.shape.corner.small — 8dp. Chips, small surfaces."
+  },
+  "horizon-semantic-border-radius-md": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-md}",
+    "$description": "md.sys.shape.corner.medium — 12dp. Cards, small FABs."
+  },
+  "horizon-semantic-border-radius-lg": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-lg}",
+    "$description": "md.sys.shape.corner.large — 16dp. FABs, extended FABs, navigation drawers."
+  },
+  "horizon-semantic-border-radius-xl": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-xl}",
+    "$description": "md.sys.shape.corner.extra-large — 28dp. Dialogs, bottom sheets, large FABs."
+  },
+  "horizon-semantic-border-radius-full": {
+    "$type": "dimension",
+    "$value": "{horizon-core-border-radius-full}",
+    "$description": "md.sys.shape.corner.full — fully rounded. Buttons, chips, sliders, search bars."
+  },
+  "horizon-semantic-spacing-grid-unit": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-3xs}",
+    "$description": "M3 base grid unit — 4dp. All spacing should be a multiple of this."
+  },
+  "horizon-semantic-spacing-margin-compact": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "M3 window margin at compact (<600dp) — 16dp."
+  },
+  "horizon-semantic-spacing-margin-medium": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 window margin at medium (600–839dp) — 24dp."
+  },
+  "horizon-semantic-spacing-margin-expanded": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 window margin at expanded (840–1199dp) — 24dp."
+  },
+  "horizon-semantic-spacing-margin-large": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 window margin at large (1200–1599dp) — 24dp."
+  },
+  "horizon-semantic-spacing-margin-extra-large": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 window margin at extra-large (≥1600dp) — 24dp."
+  },
+  "horizon-semantic-spacing-gap-compact": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "M3 column gutter at compact — 16dp."
+  },
+  "horizon-semantic-spacing-gap-medium": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 column gutter at medium and above — 24dp."
+  },
+  "horizon-semantic-spacing-gap-expanded": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 column gutter at expanded — 24dp."
+  },
+  "horizon-semantic-spacing-gap-large": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 column gutter at large — 24dp."
+  },
+  "horizon-semantic-spacing-gap-extra-large": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 column gutter at extra-large — 24dp."
+  },
+  "horizon-semantic-spacing-pane": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-sm}",
+    "$description": "M3 spacing between panes in a multi-pane layout — 24dp."
+  },
+  "horizon-core-size-breakpoint-compact": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    },
+    "$description": "M3 compact — window width 0–599dp. Phones in portrait."
+  },
+  "horizon-core-size-breakpoint-medium": {
+    "$type": "dimension",
+    "$value": {
+      "value": 600,
+      "unit": "px"
+    },
+    "$description": "M3 medium — 600–839dp. Phones in landscape, small tablets."
+  },
+  "horizon-core-size-breakpoint-expanded": {
+    "$type": "dimension",
+    "$value": {
+      "value": 840,
+      "unit": "px"
+    },
+    "$description": "M3 expanded — 840–1199dp. Large tablets in landscape, foldables, desktop."
+  },
+  "horizon-core-size-breakpoint-large": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1200,
+      "unit": "px"
+    },
+    "$description": "M3 large — 1200–1599dp. Desktop monitors and laptops."
+  },
+  "horizon-core-size-breakpoint-extra-large": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1600,
+      "unit": "px"
+    },
+    "$description": "M3 extra-large — 1600dp and above. Ultra-wide monitors."
+  },
+  "horizon-core-size-breakpoint-columns-compact": {
+    "$type": "dimension",
+    "$value": {
+      "value": 4,
+      "unit": "px"
+    },
+    "$description": "M3 column count at compact."
+  },
+  "horizon-core-size-breakpoint-columns-medium": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "M3 column count at medium."
+  },
+  "horizon-core-size-breakpoint-columns-expanded": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "M3 column count at expanded."
+  },
+  "horizon-core-size-breakpoint-columns-large": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "M3 column count at large."
+  },
+  "horizon-core-size-breakpoint-columns-extra-large": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "M3 column count at extra-large."
+  },
+  "horizon-core-elevation-level0": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    },
+    "$description": "M3 level 0 — 0dp. Flat: filled buttons, outlined cards. No shadow."
+  },
+  "horizon-core-elevation-level1": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1,
+      "unit": "px"
+    },
+    "$description": "M3 level 1 — 1dp. Elevated cards, bottom sheets, chips at rest."
+  },
+  "horizon-core-elevation-level2": {
+    "$type": "dimension",
+    "$value": {
+      "value": 3,
+      "unit": "px"
+    },
+    "$description": "M3 level 2 — 3dp. Navigation bar, menus, raised buttons."
+  },
+  "horizon-core-elevation-level3": {
+    "$type": "dimension",
+    "$value": {
+      "value": 6,
+      "unit": "px"
+    },
+    "$description": "M3 level 3 — 6dp. FAB at rest, dialogs, picked-up cards."
+  },
+  "horizon-core-elevation-level4": {
+    "$type": "dimension",
+    "$value": {
+      "value": 8,
+      "unit": "px"
+    },
+    "$description": "M3 level 4 — 8dp. FAB on hover, navigation drawer."
+  },
+  "horizon-core-elevation-level5": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "M3 level 5 — 12dp. FAB pressed, modal sheets. Highest level."
+  },
+  "horizon-core-border-radius-none": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-radius-xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 4,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-radius-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 8,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-radius-md": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-radius-lg": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-radius-xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 28,
+      "unit": "px"
+    },
+    "$description": "M3 extra-large corner (28dp). Added because the M3 shape scale has no 24dp step."
+  },
+  "horizon-core-border-radius-full": {
+    "$type": "dimension",
+    "$value": {
+      "value": 999,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-width-05": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.5,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-width-1": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1,
+      "unit": "px"
+    }
+  },
+  "horizon-core-border-width-2": {
+    "$type": "dimension",
+    "$value": {
+      "value": 2,
+      "unit": "px"
+    }
+  },
+  "horizon-semantic-spacing-padding-page": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "Outer padding of a page or screen."
+  },
+  "horizon-semantic-spacing-padding-container": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "Padding inside a card, panel or dialog."
+  },
+  "horizon-semantic-spacing-padding-control": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "Horizontal padding inside a button, input or chip."
+  },
+  "horizon-semantic-spacing-gap-inline": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-2xs}",
+    "$description": "Between adjacent items on one line — icon and label, chips in a row."
+  },
+  "horizon-semantic-spacing-gap-stack": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "Between stacked elements inside one group — label, field, helper text."
+  },
+  "horizon-semantic-spacing-gap-group": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xs}",
+    "$description": "Between sibling groups — cards in a list, form field groups."
+  },
+  "horizon-semantic-spacing-gap-section": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-md}",
+    "$description": "Between major page sections."
+  },
+  "horizon-semantic-size-control": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xl}",
+    "$description": "Height of a button, input or select."
+  },
+  "horizon-semantic-size-row": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-xl}",
+    "$description": "Height of a table or list row."
+  }
+}

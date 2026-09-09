@@ -1,0 +1,394 @@
+{
+  "horizon-type-fontfamily-brand": {
+    "$type": "fontFamily",
+    "$value": "Roboto",
+    "$description": "M3 brand font — Display and Headline roles. Baseline M3 = Roboto."
+  },
+  "horizon-type-fontfamily-plain": {
+    "$type": "fontFamily",
+    "$value": "Roboto",
+    "$description": "M3 plain font — Title, Body and Label roles. Baseline M3 = Roboto."
+  },
+  "horizon-type-fontfamily-logo": {
+    "$type": "fontFamily",
+    "$value": "Frank Ruhl Libre"
+  },
+  "horizon-type-display-lg-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 45,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-lg-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 52,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-lg-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-md-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 36,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-md-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 44,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-md-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-sm-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 32,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-sm-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 40,
+      "unit": "px"
+    }
+  },
+  "horizon-type-display-sm-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-lg-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 28,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-lg-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 36,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-lg-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-md-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-md-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 32,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-md-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-sm-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 22,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-sm-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 28,
+      "unit": "px"
+    }
+  },
+  "horizon-type-headline-sm-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-lg-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-lg-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 28,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-lg-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-md-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-md-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-md-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.15000000596046448,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-sm-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 14,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-sm-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    }
+  },
+  "horizon-type-title-sm-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.10000000149011612,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-lg-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-lg-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-lg-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.5,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-md-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 14,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-md-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-md-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.25,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-sm-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-sm-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-body-sm-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.4000000059604645,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-lg-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 14,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-lg-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-lg-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.10000000149011612,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-md-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-md-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-md-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.5,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-sm-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 11,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-sm-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-label-sm-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.5,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-lg-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-lg-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-lg-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-md-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 14,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-md-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-md-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-sm-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-sm-lineheight": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    }
+  },
+  "horizon-type-button-sm-tracking": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.10000000149011612,
+      "unit": "px"
+    }
+  }
+}

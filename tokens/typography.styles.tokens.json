@@ -1,0 +1,197 @@
+{
+  "display-large": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.display-large\nRoboto Regular · 57/64 · tracking -0.25\nLargest display text. Short, high-emphasis hero copy on large screens only. Use sparingly.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "Regular",
+      "fontSize": "{horizon-type-display-lg-size}",
+      "lineHeight": "{horizon-type-display-lg-lineheight}",
+      "letterSpacing": "{horizon-type-display-lg-tracking}"
+    }
+  },
+  "display-medium": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.display-medium\nRoboto Regular · 45/52 · tracking 0\nDisplay text for hero sections and marketing headers.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "Regular",
+      "fontSize": "{horizon-type-display-md-size}",
+      "lineHeight": "{horizon-type-display-md-lineheight}",
+      "letterSpacing": "{horizon-type-display-md-tracking}"
+    }
+  },
+  "display-small": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.display-small\nRoboto Regular · 36/44 · tracking 0\nSmallest display size. Section heroes and large numeric callouts.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "Regular",
+      "fontSize": "{horizon-type-display-sm-size}",
+      "lineHeight": "{horizon-type-display-sm-lineheight}",
+      "letterSpacing": "{horizon-type-display-sm-tracking}"
+    }
+  },
+  "headline-large": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.headline-large\nRoboto Regular · 32/40 · tracking 0\nHigh-emphasis headline for short, important text.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "SemiBold",
+      "fontSize": "{horizon-type-headline-lg-size}",
+      "lineHeight": "{horizon-type-headline-lg-lineheight}",
+      "letterSpacing": "{horizon-type-headline-lg-tracking}"
+    }
+  },
+  "headline-medium": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.headline-medium\nRoboto Regular · 28/36 · tracking 0\nHeadline for page and major section titles.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "SemiBold",
+      "fontSize": "{horizon-type-headline-md-size}",
+      "lineHeight": "{horizon-type-headline-md-lineheight}",
+      "letterSpacing": "{horizon-type-headline-md-tracking}"
+    }
+  },
+  "headline-small": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.headline-small\nRoboto Regular · 24/32 · tracking 0\nSmallest headline. Subsection titles and dialog headers.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "SemiBold",
+      "fontSize": "{horizon-type-headline-sm-size}",
+      "lineHeight": "{horizon-type-headline-sm-lineheight}",
+      "letterSpacing": "{horizon-type-headline-sm-tracking}"
+    }
+  },
+  "title-large": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.title-large\nRoboto Regular · 22/28 · tracking 0\nMedium-emphasis title. Top app bar headline, card titles.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-title-lg-size}",
+      "lineHeight": "{horizon-type-title-lg-lineheight}",
+      "letterSpacing": "{horizon-type-title-lg-tracking}"
+    }
+  },
+  "title-medium": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.title-medium\nRoboto Medium · 16/24 · tracking 0.15\nTitle for list item headers and dense card titles.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-title-md-size}",
+      "lineHeight": "{horizon-type-title-md-lineheight}",
+      "letterSpacing": "{horizon-type-title-md-tracking}"
+    }
+  },
+  "title-small": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.title-small\nRoboto Medium · 14/20 · tracking 0.1\nSmallest title. Dense list subheads and overlines.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-title-sm-size}",
+      "lineHeight": "{horizon-type-title-sm-lineheight}",
+      "letterSpacing": "{horizon-type-title-sm-tracking}"
+    }
+  },
+  "body-large": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.body-large\nRoboto Regular · 16/24 · tracking 0.5\nDefault body text for longer passages and primary reading copy.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Regular",
+      "fontSize": "{horizon-type-body-lg-size}",
+      "lineHeight": "{horizon-type-body-lg-lineheight}",
+      "letterSpacing": "{horizon-type-body-lg-tracking}"
+    }
+  },
+  "body-medium": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.body-medium\nRoboto Regular · 14/20 · tracking 0.25\nStandard body text. The most common role in dense UI.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Regular",
+      "fontSize": "{horizon-type-body-md-size}",
+      "lineHeight": "{horizon-type-body-md-lineheight}",
+      "letterSpacing": "{horizon-type-body-md-tracking}"
+    }
+  },
+  "body-small": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.body-small\nRoboto Regular · 12/16 · tracking 0.4\nSmallest body text. Captions, helper text and legal copy.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Regular",
+      "fontSize": "{horizon-type-body-sm-size}",
+      "lineHeight": "{horizon-type-body-sm-lineheight}",
+      "letterSpacing": "{horizon-type-body-sm-tracking}"
+    }
+  },
+  "button-large": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-button-lg-size}",
+      "lineHeight": "{horizon-type-button-lg-lineheight}",
+      "letterSpacing": "{horizon-type-button-lg-tracking}"
+    }
+  },
+  "button-medium": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-button-md-size}",
+      "lineHeight": "{horizon-type-button-md-lineheight}",
+      "letterSpacing": "{horizon-type-button-md-tracking}"
+    }
+  },
+  "button-small": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-brand}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-button-sm-size}",
+      "lineHeight": "{horizon-type-button-sm-lineheight}",
+      "letterSpacing": "{horizon-type-button-sm-tracking}"
+    }
+  },
+  "label-large": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.label-large\nRoboto Medium · 14/20 · tracking 0.1\nButton labels, tabs and prominent interactive text.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-label-lg-size}",
+      "lineHeight": "{horizon-type-label-lg-lineheight}",
+      "letterSpacing": "{horizon-type-label-lg-tracking}"
+    }
+  },
+  "label-medium": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.label-medium\nRoboto Medium · 12/16 · tracking 0.5\nSmaller component labels, chips and navigation items.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-label-md-size}",
+      "lineHeight": "{horizon-type-label-md-lineheight}",
+      "letterSpacing": "{horizon-type-label-md-tracking}"
+    }
+  },
+  "label-small": {
+    "$type": "typography",
+    "$description": "M3 token: md.sys.typescale.label-small\nRoboto Medium · 11/16 · tracking 0.5\nSmallest label. Badges and tightly constrained UI text.",
+    "$value": {
+      "fontFamily": "{horizon-type-fontfamily-plain}",
+      "fontWeight": "Medium",
+      "fontSize": "{horizon-type-label-sm-size}",
+      "lineHeight": "{horizon-type-label-sm-lineheight}",
+      "letterSpacing": "{horizon-type-label-sm-tracking}"
+    }
+  }
+}
