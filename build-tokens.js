@@ -171,3 +171,61 @@ await css('tokens-dark.css',
 await native(src(CORE, T+'semantic.light.tokens.json',
   T+'size.mobile.tokens.json', T+'type.mobile.tokens.json',
   STYLES)).buildAllPlatforms();
+
+// ── Storybook data ──────────────────────────────────────────────────────────
+// The CSS build emits only the `web` size/type mode, and the native builds drop
+// the composite types — so neither output can document the full token set.
+// Emit one flat record per token (resolved value, type, description, and the
+// alias it came from) for every mode we ship, and let Storybook render those.
+StyleDictionary.registerFormat({
+  name: 'json/storybook',
+  format: ({ dictionary }) =>
+    JSON.stringify(
+      dictionary.allTokens.map((t) => ({
+        name: t.name,
+        path: t.path,
+        type: t.$type ?? t.type,
+        value: t.$value ?? t.value,
+        // What the designer actually wrote — "{core.color.blue.500}" — so the
+        // gallery can show the alias next to the colour it resolves to.
+        alias: typeof (t.original?.$value ?? t.original?.value) === 'string'
+          ? (t.original.$value ?? t.original.value).match(/^\{(.+)\}$/)?.[1]
+          : undefined,
+        description: t.$description ?? t.comment,
+        source: t.filePath.replace(T, ''),
+      })),
+      null,
+      2,
+    ) + '\n',
+});
+
+const json = (name, sources) =>
+  new StyleDictionary({
+    source: sources,
+    preprocessors: ['typography/fix'],
+    platforms: {
+      json: {
+        transforms: CSS_TRANSFORMS,
+        buildPath: 'build/json/',
+        files: [{ destination: name, format: 'json/storybook' }],
+      },
+    },
+  });
+
+// Colour varies by theme; size and type vary by mode. They are independent, so
+// four builds cover the grid without emitting all six combinations.
+await json('tokens.light.json',
+  src(CORE, T+'semantic.light.tokens.json', T+'size.web.tokens.json',
+      T+'type.web.tokens.json', STYLES)).buildAllPlatforms();
+
+await json('tokens.dark.json',
+  src(CORE, T+'semantic.dark.tokens.json', T+'size.web.tokens.json',
+      T+'type.web.tokens.json', STYLES)).buildAllPlatforms();
+
+await json('tokens.mobile.json',
+  src(CORE, T+'semantic.light.tokens.json', T+'size.mobile.tokens.json',
+      T+'type.mobile.tokens.json', STYLES)).buildAllPlatforms();
+
+await json('tokens.back-office.json',
+  src(CORE, T+'semantic.light.tokens.json', T+'size.back-office.tokens.json',
+      T+'type.back-office.tokens.json', STYLES)).buildAllPlatforms();
