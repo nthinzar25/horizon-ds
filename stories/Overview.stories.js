@@ -17,6 +17,18 @@ const preview = (token) => {
       },
     });
   }
+  if (token.type === 'gradient') {
+    return h('span', {
+      style: {
+        display: 'inline-block',
+        width: '28px',
+        height: '18px',
+        borderRadius: '4px',
+        background: token.value,
+        border: '1px solid var(--horizon-semantic-color-border-secondary)',
+      },
+    });
+  }
   if (token.type === 'shadow') {
     return h('span', {
       style: {

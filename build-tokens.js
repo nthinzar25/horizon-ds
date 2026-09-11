@@ -3,7 +3,8 @@ import { existsSync } from 'node:fs';
 
 const T = 'tokens/';
 const CORE = T + 'core.default.tokens.json';
-const STYLES = [T + 'typography.styles.tokens.json', T + 'effects.styles.tokens.json'];
+const STYLES = [T + 'typography.styles.tokens.json', T + 'effects.styles.tokens.json',
+                T + 'color.styles.tokens.json'];
 
 // Style Dictionary treats `source` entries as globs and silently skips any that
 // match nothing — which only resurfaces later as "reference not found", pointing
@@ -47,12 +48,49 @@ StyleDictionary.registerPreprocessor({
   },
 });
 
+// Style Dictionary has no CSS output for the DTCG `gradient` type, so a gradient
+// token would land in tokens.css as "[object Object]". Stitch the stops into a
+// linear-gradient(). Because the transform is transitive, the stop colours are
+// already CSS strings by the time it runs — the same mechanism the shadow
+// shorthand relies on — with a fallback for an inline sRGB object.
+const cssColor = (c) => {
+  if (typeof c === 'string') return c;
+  const [r, g, b] = (c.components ?? []).map((n) => Math.round(n * 255));
+  return `rgba(${r}, ${g}, ${b}, ${c.alpha ?? 1})`;
+};
+
+// DTCG gradients carry no direction. Figma exports its 2×3 gradientTransform
+// (shape space → gradient space); the first row is the direction along which
+// the stop position increases. Identity is left→right, which in CSS is 90deg.
+const gradientAngle = (t) => {
+  const m = t.$extensions?.figma?.gradientTransform;
+  if (!m) return 90;
+  const [dx, dy] = m[0];
+  return (Math.round((Math.atan2(dx, -dy) * 180) / Math.PI) + 360) % 360;
+};
+
+StyleDictionary.registerTransform({
+  name: 'gradient/css',
+  type: 'value',
+  transitive: true,
+  filter: (t) => (t.$type ?? t.type) === 'gradient',
+  transform: (t) => {
+    const v = t.$value ?? t.value;
+    if (!Array.isArray(v)) return v; // already a string
+    const stops = v.map((s) => `${cssColor(s.color)} ${Math.round(s.position * 100)}%`);
+    return `linear-gradient(${gradientAngle(t)}deg, ${stops.join(', ')})`;
+  },
+});
+
 // The built-in `css` group collapses typography tokens into the CSS `font`
 // shorthand, which has no slot for letterSpacing — so every M3 tracking value
 // was being silently dropped. Drop that transform and expand the composite into
 // one custom property per field instead.
-const CSS_TRANSFORMS = StyleDictionary.hooks.transformGroups.css
-  .filter((t) => t !== 'typography/css/shorthand');
+const CSS_TRANSFORMS = [
+  ...StyleDictionary.hooks.transformGroups.css
+    .filter((t) => t !== 'typography/css/shorthand'),
+  'gradient/css',
+];
 
 StyleDictionary.registerFormat({
   name: 'css/variables-expanded',

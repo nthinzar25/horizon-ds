@@ -1000,6 +1000,18 @@
       ]
     }
   },
+  "horizon-core-color-neutral-0a": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.03921568766236305,
+        0.062745101749897,
+        0.13725490868091583
+      ],
+      "alpha": 0
+    }
+  },
   "horizon-core-color-neutral-50": {
     "$type": "color",
     "$value": {

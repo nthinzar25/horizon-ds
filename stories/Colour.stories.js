@@ -2,6 +2,7 @@ import {
   caption,
   chrome,
   contrast,
+  empty,
   grid,
   h,
   onColor,
@@ -269,6 +270,72 @@ export const Border = {
             caption(t),
           );
         }),
+      ),
+    );
+  },
+};
+
+// ── Gradients ───────────────────────────────────────────────────────────────
+
+export const Gradients = {
+  name: 'Gradients',
+  render: (_args, { globals }) => {
+    const { set } = use(globals);
+    const gradients = set.filter((t) => t.type === 'gradient');
+    if (!gradients.length) return page('Gradients', null, empty('gradients'));
+
+    // A scrim only makes sense over something, so show each gradient over a
+    // busy surface and over the page, with the ink it is meant to protect.
+    const over = (t, backdrop, label) =>
+      h(
+        'div',
+        {
+          style: {
+            position: 'relative',
+            height: '160px',
+            borderRadius: 'var(--horizon-semantic-border-radius-md)',
+            overflow: 'hidden',
+            background: backdrop,
+          },
+        },
+        h('div', { style: { position: 'absolute', inset: 0, background: t.value } }),
+        h(
+          'div',
+          {
+            style: {
+              position: 'absolute',
+              inset: 0,
+              padding: 'var(--horizon-semantic-spacing-gap-stack)',
+              color: 'var(--horizon-semantic-color-text-inverse-default)',
+              fontSize: 'var(--horizon-type-title-md-size)',
+              fontWeight: 500,
+            },
+          },
+          label,
+        ),
+      );
+
+    return page(
+      'Gradients',
+      'Gradient styles from the Figma colour-style library, rendered as CSS ' +
+        'linear-gradient(). Direction is read from the Figma transform; the ' +
+        'stops reference core colour tokens.',
+      grid(
+        360,
+        ...gradients.map((t) =>
+          h(
+            'div',
+            { class: 'hz-card' },
+            over(
+              t,
+              'linear-gradient(135deg, var(--horizon-core-color-cyan-300), ' +
+                'var(--horizon-core-color-violet-500))',
+              'Over an image',
+            ),
+            over(t, 'var(--horizon-semantic-color-bg-surfacesecondary)', 'Over a surface'),
+            caption(t),
+          ),
+        ),
       ),
     );
   },
