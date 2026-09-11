@@ -6,17 +6,24 @@
       "unit": "px"
     }
   },
-  "horizon-core-spacing-3xs": {
+  "horizon-core-spacing-4xs": {
     "$type": "dimension",
     "$value": {
       "value": 4,
       "unit": "px"
     }
   },
-  "horizon-core-spacing-2xs": {
+  "horizon-core-spacing-3xs": {
     "$type": "dimension",
     "$value": {
       "value": 8,
+      "unit": "px"
+    }
+  },
+  "horizon-core-spacing-2xs": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
       "unit": "px"
     }
   },
@@ -148,7 +155,7 @@
   },
   "horizon-semantic-spacing-grid-unit": {
     "$type": "dimension",
-    "$value": "{horizon-core-spacing-3xs}",
+    "$value": "{horizon-core-spacing-4xs}",
     "$description": "M3 base grid unit — 4dp. All spacing should be a multiple of this."
   },
   "horizon-semantic-spacing-margin-compact": {
@@ -180,6 +187,14 @@
     "$type": "dimension",
     "$value": "{horizon-core-spacing-xs}",
     "$description": "M3 column gutter at compact — 16dp."
+  },
+  "horizon-semantic-spacing-gap-extrasmall": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-4xs}"
+  },
+  "horizon-semantic-spacing-gap-small": {
+    "$type": "dimension",
+    "$value": "{horizon-core-spacing-3xs}"
   },
   "horizon-semantic-spacing-gap-medium": {
     "$type": "dimension",
@@ -417,17 +432,17 @@
   },
   "horizon-semantic-spacing-padding-control": {
     "$type": "dimension",
-    "$value": "{horizon-core-spacing-2xs}",
+    "$value": "{horizon-core-spacing-3xs}",
     "$description": "Horizontal padding inside a button, input or chip."
   },
   "horizon-semantic-spacing-gap-inline": {
     "$type": "dimension",
-    "$value": "{horizon-core-spacing-3xs}",
+    "$value": "{horizon-core-spacing-4xs}",
     "$description": "Between adjacent items on one line — icon and label, chips in a row."
   },
   "horizon-semantic-spacing-gap-stack": {
     "$type": "dimension",
-    "$value": "{horizon-core-spacing-2xs}",
+    "$value": "{horizon-core-spacing-3xs}",
     "$description": "Between stacked elements inside one group — label, field, helper text."
   },
   "horizon-semantic-spacing-gap-group": {
@@ -449,5 +464,12 @@
     "$type": "dimension",
     "$value": "{horizon-core-spacing-md}",
     "$description": "Height of a table or list row."
+  },
+  "horizon-core-size-gap": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0,
+      "unit": "px"
+    }
   }
 }

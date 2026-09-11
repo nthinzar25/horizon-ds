@@ -4,7 +4,7 @@
     "$description": "md.sys.elevation.level1 — 1dp\nKey: 0 1/2/0 @30%  ·  Ambient: 0 1/3/1 @15%\nElevated cards, bottom sheets, chips at rest.",
     "$value": [
       {
-        "color": "{horizon-core-color-neutral-300a}",
+        "color": "{horizon-core-color-neutral-200a}",
         "offsetX": {
           "value": 0,
           "unit": "px"
@@ -23,7 +23,7 @@
         }
       },
       {
-        "color": "{horizon-core-color-neutral-200a}",
+        "color": "{horizon-core-color-neutral-100a}",
         "offsetX": {
           "value": 0,
           "unit": "px"
@@ -67,7 +67,7 @@
         }
       },
       {
-        "color": "{horizon-core-color-neutral-200a}",
+        "color": "{horizon-core-color-neutral-100a}",
         "offsetX": {
           "value": 0,
           "unit": "px"
