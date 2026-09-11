@@ -1,0 +1,32 @@
+{
+  "gradient-overlay-gradient": {
+    "$type": "gradient",
+    "$value": [
+      {
+        "color": "{horizon-core-color-neutral-200a}",
+        "position": 0
+      },
+      {
+        "color": "{horizon-core-color-neutral-0a}",
+        "position": 1
+      }
+    ],
+    "$extensions": {
+      "figma": {
+        "gradientType": "linear",
+        "gradientTransform": [
+          [
+            6.123234262925839e-17,
+            1,
+            0
+          ],
+          [
+            -1,
+            6.123234262925839e-17,
+            1
+          ]
+        ]
+      }
+    }
+  }
+}
