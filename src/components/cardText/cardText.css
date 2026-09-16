@@ -1,0 +1,84 @@
+/* cardText — the text block of a card: title, metadata line and price.
+ * Figma: Horizon Stays Components Library › cardText (node 47:187) */
+
+.hz-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--horizon-semantic-spacing-gap-small);
+  min-width: 0;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: var(--horizon-type-fontfamily-plain), system-ui, sans-serif;
+  color: var(--horizon-semantic-color-text-primary);
+}
+
+.hz-card-text__info,
+.hz-card-text__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--horizon-semantic-spacing-gap-extrasmall);
+  width: 100%;
+}
+
+.hz-card-text__details {
+  white-space: nowrap;
+}
+
+.hz-card-text__row {
+  display: flex;
+  align-items: center;
+  gap: var(--horizon-semantic-spacing-gap-extrasmall);
+  width: 100%;
+}
+
+.hz-card-text p {
+  margin: 0;
+}
+
+/* Title / Medium. Property names are long; the title is capped at two lines. */
+.hz-card-text__title {
+  width: 100%;
+  font-size: var(--horizon-type-title-md-size);
+  line-height: var(--horizon-type-title-md-lineheight);
+  letter-spacing: var(--horizon-type-title-md-tracking);
+  font-weight: var(--horizon-type-fontweight-medium);
+  color: var(--horizon-semantic-color-text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Body / Small, secondary. */
+.hz-card-text__subtitle,
+.hz-card-text__reviews,
+.hz-card-text__unit {
+  font-size: var(--horizon-type-body-sm-size);
+  line-height: var(--horizon-type-body-sm-lineheight);
+  letter-spacing: var(--horizon-type-body-sm-tracking);
+  font-weight: var(--horizon-type-fontweight-regular);
+  color: var(--horizon-semantic-color-text-secondary);
+}
+
+.hz-card-text__subtitle {
+  width: 100%;
+}
+
+/* Title / Small. */
+.hz-card-text__rating,
+.hz-card-text__price {
+  font-size: var(--horizon-type-title-sm-size);
+  line-height: var(--horizon-type-title-sm-lineheight);
+  letter-spacing: var(--horizon-type-title-sm-tracking);
+  font-weight: var(--horizon-type-fontweight-medium);
+}
+
+.hz-card-text__rating {
+  color: var(--horizon-semantic-color-text-warning);
+}
+
+.hz-card-text__price {
+  color: var(--horizon-semantic-color-text-primary);
+}
