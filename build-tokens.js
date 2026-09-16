@@ -15,9 +15,26 @@ const src = (...files) => {
   return files.flat();
 };
 
-// Figma writes font weight as a style NAME. CSS needs a number.
-const WEIGHTS = { Thin:100, ExtraLight:200, Light:300, Regular:400, Medium:500,
-                  SemiBold:600, Bold:700, ExtraBold:800, Black:900 };
+// Figma writes font weight as a style NAME. CSS needs a number, and so does
+// Swift — a bare `semibold` is an undefined identifier there. Names arrive in
+// more than one casing ("SemiBold" inside a text style, "semibold" as a
+// standalone token), so match loosely.
+const WEIGHTS = { thin:100, hairline:100, extralight:200, ultralight:200,
+                  light:300, regular:400, normal:400, book:400, medium:500,
+                  semibold:600, demibold:600, bold:700, extrabold:800,
+                  ultrabold:800, black:900, heavy:900 };
+const weightOf = (v) =>
+  typeof v === 'string'
+    ? (WEIGHTS[v.replace(/[\s_-]/g, '').toLowerCase()] ?? v)
+    : v;
+
+StyleDictionary.registerTransform({
+  name: 'fontWeight/number',
+  type: 'value',
+  transitive: true,
+  filter: (t) => (t.$type ?? t.type) === 'fontWeight',
+  transform: (t) => weightOf(t.$value ?? t.value),
+});
 
 const isTypography = (t) => (t.$type ?? t.type) === 'typography';
 
@@ -33,7 +50,7 @@ StyleDictionary.registerPreprocessor({
           const v = t.$value;
           t.$value = {
             ...v,
-            fontWeight: WEIGHTS[v.fontWeight] ?? v.fontWeight,
+            fontWeight: weightOf(v.fontWeight),
             lineHeight: typeof v.lineHeight === 'number'
               ? { value: v.lineHeight, unit: 'px' }
               : v.lineHeight,
@@ -90,6 +107,7 @@ const CSS_TRANSFORMS = [
   ...StyleDictionary.hooks.transformGroups.css
     .filter((t) => t !== 'typography/css/shorthand'),
   'gradient/css',
+  'fontWeight/number',
 ];
 
 StyleDictionary.registerFormat({
@@ -172,6 +190,7 @@ const IOS_TRANSFORMS = [
   ...StyleDictionary.hooks.transformGroups['ios-swift']
     .map((t) => (t === 'size/swift/remToCGFloat' ? 'size/swift/pxToCGFloat' : t)),
   'fontFamily/swift/literal',
+  'fontWeight/number',
 ];
 
 // The swift template emits `static let ${comment}${name} = ...`, so a token

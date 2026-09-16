@@ -2,6 +2,7 @@ import {
   MODES,
   caption,
   chrome,
+  empty,
   grid,
   h,
   ofType,
@@ -85,6 +86,44 @@ export const FontFamilies = {
                 },
               },
               'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789',
+            ),
+            caption(t),
+          ),
+        ),
+      ),
+    );
+  },
+};
+
+export const FontWeights = {
+  name: 'Font weights',
+  render: (_args, { globals }) => {
+    const { set } = use(globals);
+    const weights = ofType(set, 'fontWeight').sort((a, b) => a.value - b.value);
+    if (!weights.length) return page('Font weights', null, empty('weight tokens'));
+
+    return page(
+      'Font weights',
+      'Standalone weight tokens. Figma exports these as names — "semibold" — ' +
+        'and the pipeline maps them to the numeric values CSS and iOS need.',
+      grid(
+        320,
+        ...weights.map((t) =>
+          h(
+            'div',
+            { class: 'hz-card' },
+            h(
+              'div',
+              {
+                class: 'hz-specimen',
+                style: {
+                  fontFamily: 'var(--horizon-type-fontfamily-plain), system-ui, sans-serif',
+                  fontWeight: t.value,
+                  fontSize: '30px',
+                  lineHeight: '40px',
+                },
+              },
+              SAMPLE,
             ),
             caption(t),
           ),
