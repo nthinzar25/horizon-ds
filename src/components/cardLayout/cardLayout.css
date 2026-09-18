@@ -1,0 +1,51 @@
+/* cardLayout — arranges a card's media and text: vertical for grids,
+ * horizontal for list rows.
+ * Figma: Horizon Stays Components Library › cardLayout (node 170:1728)
+ * Figma binds the gap to core/spacing/3xs (8px); the semantic gap token with
+ * that value and meaning is gap/small. */
+
+.hz-card-layout {
+  display: flex;
+  gap: var(--horizon-semantic-spacing-gap-small);
+  width: 100%;
+  min-width: 0;
+}
+
+.hz-card-layout__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+/* ── orientation ─────────────────────────────────────────────────────────── */
+
+.hz-card-layout[data-orientation='vertical'] {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.hz-card-layout[data-orientation='vertical'] > .hz-card-image,
+.hz-card-layout[data-orientation='vertical'] > .hz-card-layout__body {
+  width: 100%;
+}
+
+.hz-card-layout[data-orientation='horizontal'] {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Media and text share the row equally; the media keeps its aspect ratio. */
+.hz-card-layout[data-orientation='horizontal'] > .hz-card-image,
+.hz-card-layout[data-orientation='horizontal'] > .hz-card-layout__body {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* ── slot ────────────────────────────────────────────────────────────────── */
+/* Figma leaves the gap between the text and the slot as a raw 10px, so no
+ * token is applied here. Reported, not guessed. */
+
+.hz-card-layout__slot {
+  width: 100%;
+}

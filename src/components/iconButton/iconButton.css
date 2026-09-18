@@ -1,0 +1,75 @@
+/* iconButton — an action with no visible label.
+ * Figma: Horizon Stays Components Library › iconButton (node 170:1329)
+ * Every value is a token. Padding and icon size are bound to core tokens in
+ * Figma because no semantic padding / icon-size layer exists yet — see the
+ * build report. */
+
+.hz-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: content-box;
+  margin: 0;
+  border: 0;
+  padding: var(--horizon-core-spacing-3xs);
+  border-radius: var(--horizon-semantic-border-radius-full);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  line-height: 0;
+  transition:
+    box-shadow 120ms ease,
+    background-color 120ms ease;
+}
+
+.hz-icon-button .hz-icon {
+  display: block;
+  width: var(--horizon-core-size-icon-md);
+  height: var(--horizon-core-size-icon-md);
+}
+
+/* ── variant ─────────────────────────────────────────────────────────────── */
+
+.hz-icon-button[data-variant='outline'] {
+  background: var(--horizon-semantic-color-bg-base);
+  color: var(--horizon-semantic-color-icon-primary);
+}
+
+.hz-icon-button[data-variant='active'] {
+  background: var(--horizon-semantic-color-bg-accent-red);
+  color: var(--horizon-semantic-color-icon-negative);
+}
+
+.hz-icon-button[data-variant='fill'],
+.hz-icon-button[data-variant='small'] {
+  background: var(--horizon-semantic-color-bg-info-idle);
+  color: var(--horizon-semantic-color-icon-inverse-default);
+}
+
+.hz-icon-button[data-variant='small'] .hz-icon {
+  width: var(--horizon-core-size-icon-sm);
+  height: var(--horizon-core-size-icon-sm);
+}
+
+/* ── state ───────────────────────────────────────────────────────────────── */
+/* `data-state="hover"` pins the hover look (stories, previews); real hover
+ * comes from the pointer. Both resolve to the same elevation style. */
+
+.hz-icon-button[data-state='hover'],
+.hz-icon-button:hover {
+  box-shadow: var(--elevation-level-2);
+}
+
+.hz-icon-button[data-variant='small'][data-state='hover'],
+.hz-icon-button[data-variant='small']:hover {
+  box-shadow: var(--elevation-level-1);
+}
+
+/* Figma has no focused variant; the keyboard story still needs a ring. */
+.hz-icon-button:focus-visible {
+  outline: var(--horizon-core-border-width-2) solid
+    var(--horizon-semantic-color-border-brand-default);
+  outline-offset: var(--horizon-core-border-width-2);
+}
