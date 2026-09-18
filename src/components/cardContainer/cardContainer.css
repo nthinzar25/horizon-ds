@@ -1,0 +1,42 @@
+/* cardContainer — the surface primitive every Horizon card sits on. It owns
+ * background, radius, elevation and interaction state.
+ * Figma: Horizon Stays Components Library › cardContainer (node 188:7377)
+ *
+ * Figma binds the radius to core/spacing/xs (16px) — the semantic radius token
+ * with that value is border/radius/lg. Padding is bound to core/spacing/xs and
+ * core/spacing/2xs; there is no semantic padding token at 16/12, so the core
+ * tokens are used as bound and reported. */
+
+.hz-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--horizon-semantic-spacing-gap-small);
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: var(--horizon-core-spacing-2xs) var(--horizon-core-spacing-xs);
+  overflow: hidden;
+  border-radius: var(--horizon-semantic-border-radius-lg);
+  background: var(--horizon-semantic-color-bg-base);
+  color: var(--horizon-semantic-color-text-primary);
+  transition: box-shadow 120ms ease;
+}
+
+.hz-card-container > .hz-card-layout,
+.hz-card-container > .hz-card-container__slot {
+  width: 100%;
+}
+
+/* ── state ───────────────────────────────────────────────────────────────── */
+/* Hover lifts the card to Elevation / Level 3 (a Figma style, so it ships
+ * unprefixed). `data-state="hover"` pins it; pointer hover and keyboard focus
+ * landing anywhere inside the card trigger it too, so the lift is not
+ * mouse-only. */
+
+.hz-card-container[data-state='hover'],
+.hz-card-container:hover,
+.hz-card-container:focus-within {
+  box-shadow: var(--elevation-level-3);
+}
