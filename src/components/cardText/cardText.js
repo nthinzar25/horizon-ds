@@ -5,7 +5,8 @@
 // Boolean props mirror the Figma properties; the string props carry the copy.
 //
 //   metadata  boolean, shows the details block (rating + price)  (default true)
-//   review    boolean, shows the rating row                       (default true)
+//             Left out entirely when review and price are both off.
+//   review   boolean, shows the rating row                       (default true)
 //   price     boolean, shows the price row                        (default true)
 //   title, subtitle, rating, reviews, priceText, priceUnit  — the copy
 import './cardText.css';
@@ -32,6 +33,7 @@ export const cardText = ({
       subtitle && h('p', { class: 'hz-card-text__subtitle' }, subtitle),
     ),
     metadata &&
+      (review || price) &&
       h(
         'div',
         { class: 'hz-card-text__details' },
