@@ -1,0 +1,159 @@
+/* button — triggers an action.
+ * Figma: Horizon Stays Components Library › button (node 159:193)
+ *
+ * Every value is a token. Vertical padding is bound to core/spacing/2xs (12px)
+ * in Figma and there is no semantic spacing token at 12px, so the core token is
+ * used as bound and reported. The 10px gap between icon and label is unbound in
+ * Figma; gap/inline (8px) is used and the gap reported. */
+
+.hz-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--horizon-semantic-spacing-gap-inline);
+  margin: 0;
+  border: 0;
+  padding: var(--horizon-core-spacing-2xs) var(--horizon-semantic-spacing-margin-medium);
+  border-radius: var(--horizon-semantic-border-radius-md);
+  background: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: var(--horizon-type-fontfamily-brand);
+  font-weight: var(--horizon-type-fontweight-medium);
+  font-size: var(--horizon-type-button-lg-size);
+  line-height: var(--horizon-type-button-lg-lineheight);
+  letter-spacing: var(--horizon-type-button-lg-tracking);
+  white-space: nowrap;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    color 120ms ease;
+}
+
+.hz-button .hz-icon {
+  display: block;
+  flex-shrink: 0;
+  width: var(--horizon-core-size-icon-md);
+  height: var(--horizon-core-size-icon-md);
+}
+
+.hz-button:disabled,
+.hz-button[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
+.hz-button:focus-visible {
+  outline: var(--horizon-core-border-width-2) solid
+    var(--horizon-semantic-color-border-brand-default);
+  outline-offset: var(--horizon-core-border-width-2);
+}
+
+/* `data-state` pins a look for stories and previews; the pointer drives the
+ * same look for real, only while the button is live. */
+
+/* ── primary ─────────────────────────────────────────────────────────────── */
+
+.hz-button[data-variant='primary'] {
+  background: var(--horizon-semantic-color-bg-primary-idle);
+  color: var(--horizon-semantic-color-text-inverse-default);
+}
+
+.hz-button[data-variant='primary'][data-state='hover'],
+.hz-button[data-variant='primary'][data-state='idle']:hover {
+  background: var(--horizon-semantic-color-bg-primary-hovered);
+}
+
+.hz-button[data-variant='primary'][data-state='press'],
+.hz-button[data-variant='primary'][data-state='idle']:active {
+  background: var(--horizon-semantic-color-bg-primary-focused);
+}
+
+.hz-button[data-variant='primary'][data-state='loading'] {
+  background: var(--horizon-semantic-color-bg-primary-light);
+}
+
+.hz-button[data-variant='primary'][data-state='disable'] {
+  background: var(--horizon-semantic-color-bg-disabled);
+}
+
+/* ── secondary ───────────────────────────────────────────────────────────── */
+
+.hz-button[data-variant='secondary'] {
+  background: var(--horizon-semantic-color-bg-primary-neutral-idle);
+  color: var(--horizon-semantic-color-text-inverse-default);
+}
+
+.hz-button[data-variant='secondary'][data-state='hover'],
+.hz-button[data-variant='secondary'][data-state='idle']:hover {
+  background: var(--horizon-semantic-color-bg-primary-neutral-hovered);
+}
+
+.hz-button[data-variant='secondary'][data-state='press'],
+.hz-button[data-variant='secondary'][data-state='idle']:active {
+  background: var(--horizon-semantic-color-bg-primary-neutral-focused);
+}
+
+.hz-button[data-variant='secondary'][data-state='loading'] {
+  background: var(--horizon-semantic-color-bg-surfaceprimary);
+}
+
+.hz-button[data-variant='secondary'][data-state='disable'] {
+  background: var(--horizon-semantic-color-bg-disabled);
+}
+
+/* ── tertiary ────────────────────────────────────────────────────────────── */
+
+.hz-button[data-variant='tertiary'] {
+  background: var(--horizon-semantic-color-bg-surfaceprimary);
+  color: var(--horizon-semantic-color-text-primary);
+}
+
+/* Figma draws hover and press identically. */
+.hz-button[data-variant='tertiary'][data-state='hover'],
+.hz-button[data-variant='tertiary'][data-state='press'],
+.hz-button[data-variant='tertiary'][data-state='idle']:hover,
+.hz-button[data-variant='tertiary'][data-state='idle']:active {
+  background: var(--horizon-semantic-color-bg-surfacesecondary);
+}
+
+.hz-button[data-variant='tertiary'][data-state='loading'] {
+  color: var(--horizon-semantic-color-text-disabled-on-light);
+}
+
+.hz-button[data-variant='tertiary'][data-state='disable'] {
+  color: var(--horizon-semantic-color-text-disabled-on-dark);
+}
+
+/* ── outline ─────────────────────────────────────────────────────────────── */
+/* Figma draws the 1px stroke outside the padding, so outline is 2px wider and
+ * taller than the filled variants. */
+
+.hz-button[data-variant='outline'] {
+  border: var(--horizon-core-border-width-1) solid
+    var(--horizon-semantic-color-border-brand-default);
+  color: var(--horizon-semantic-color-text-brand);
+}
+
+.hz-button[data-variant='outline'][data-state='hover'],
+.hz-button[data-variant='outline'][data-state='idle']:hover {
+  border-color: var(--horizon-semantic-color-border-brand-bold);
+}
+
+/* Figma draws press identically to idle. */
+.hz-button[data-variant='outline'][data-state='press'],
+.hz-button[data-variant='outline'][data-state='idle']:active {
+  border-color: var(--horizon-semantic-color-border-brand-default);
+}
+
+/* Figma binds the label to a border token here; it is reported. */
+.hz-button[data-variant='outline'][data-state='loading'] {
+  border-color: var(--horizon-semantic-color-border-brand-light);
+  color: var(--horizon-semantic-color-border-brand-light);
+}
+
+/* Figma binds the stroke to an icon token here; it is reported. */
+.hz-button[data-variant='outline'][data-state='disable'] {
+  border-color: var(--horizon-semantic-color-icon-disabled-on-dark);
+  color: var(--horizon-semantic-color-text-disabled-on-dark);
+}
