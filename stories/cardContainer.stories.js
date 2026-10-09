@@ -58,15 +58,9 @@ export const Grid = {
 /** Hover, focus and the favourite toggle all behave — tab into the card. */
 export const Interactive = {
   render: () => {
-    const toggle = (e) => {
-      const b = e.currentTarget;
-      const next = b.getAttribute('aria-pressed') !== 'true';
-      b.setAttribute('aria-pressed', String(next));
-      b.dataset.variant = next ? 'active' : 'outline';
-    };
     const card = cardContainer({
       layout: {
-        image: { src: PHOTO, favourite: { variant: 'outline', pressed: false, onClick: toggle } },
+        image: { src: PHOTO, favourite: { pressed: false } },
         text: LISTING,
       },
     });
